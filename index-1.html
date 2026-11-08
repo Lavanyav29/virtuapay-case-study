@@ -1,0 +1,2045 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="keywords" content="Virtua Pay, Secure Payments, E-commerce, Reel Shopping">
+    <meta name="robots" content="INDEX,FOLLOW">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Home | Virtua Pay - Secure Payments & Reel Shopping</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/logo/virtuapay-logo.png">
+    <!-- slider -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!-- magnfic popup -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!-- aos animation -->
+    <link rel="stylesheet" href="assets/css/aos-animation.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Main css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta name="description"
+        content="Explore our Home page! Virtua Pay connects reel-based product discovery with instant, secure mobile payments. Sell directly through social media and earn Virtua Coins fast and safe!">
+    <style>
+        /* ===== Green-to-Yellow Color Overrides ===== */
+        /* Lime green decorative images â†’ Yellow */
+        img[src*="circle-shape-img1"],
+        img[src*="arrow-shape1"],
+        img[src*="banner-shape2"],
+        img[src*="banner-scroll-img1"],
+        img[src*="banner-three-marque-icon1"],
+        img[src*="more-features-shape1"] {
+            filter: hue-rotate(-35deg) saturate(1.5) brightness(1.1);
+        }
+
+        /* Teal/dark green decorative images â†’ Yellow */
+        img[src*="our-feature-shape1"],
+        img[src*="banner-three-circle-shape1"],
+        img[src*="banne-three-arrow-shape1"],
+        img[src*="banner-three-start-shape1"] {
+            filter: hue-rotate(45deg) saturate(3) brightness(1.4);
+        }
+
+        /* Green progress-wrap scroll-to-top border override (if green) */
+        .progress-wrap svg.progress-circle path {
+            stroke: #f5c518 !important;
+        }
+
+        /* Grey payment-solutions tab boxes â†’ Yellow */
+        .payment-solutions__button.bg-base-two-10 {
+            background-color: #f5c518 !important;
+        }
+
+        /* Icon square at bottom of payment-solutions tabs â†’ Yellow */
+        .payment-solutions__button .bg-base-two-10 {
+            background-color: #f5c518 !important;
+        }
+
+        /* Teal/dark-green why-choose icon â†’ Yellow */
+        img[src*="why-choose-therr-icon1"] {
+            filter: hue-rotate(45deg) saturate(3) brightness(1.4);
+        }
+
+        /* Teal icons inside payment-solutions buttons â†’ Yellow color */
+        .payment-solutions__button .text-base-two-600 {
+            color: #18150c !important;
+        }
+
+        /* Green ring behind phone in "Our Main Features" â†’ Yellow */
+        img[src*="our-features-three-img1"] {
+            filter: grayscale(1) sepia(1) saturate(15) hue-rotate(-35deg) brightness(1.1);
+        }
+
+        /* Phone, inside color, and background circle â†’ Black */
+        img[src*="payment-solutions-four-img1"] {
+            /* filter: brightness(0); */
+        }
+
+        /* Blog Popup Modal Styles */
+        .blog-modal .modal-content {
+            border: none;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 25px 60px rgba(24, 21, 12, 0.3);
+        }
+
+        .blog-modal .modal-header {
+            background-color: #18150c;
+            border-bottom: 3px solid var(--main-600);
+            padding: 20px 30px;
+        }
+
+        .blog-modal .modal-header .modal-title {
+            font-family: var(--heading-font);
+            color: #fff;
+            font-size: 1.3rem;
+        }
+
+        .blog-modal .modal-header .btn-close {
+            filter: invert(1);
+            opacity: 0.8;
+        }
+
+        .blog-modal .modal-header .btn-close:hover {
+            opacity: 1;
+        }
+
+        .blog-modal .modal-body {
+            padding: 30px;
+            max-height: 65vh;
+            overflow-y: auto;
+        }
+
+        .blog-modal .modal-body h5 {
+            font-family: var(--heading-font);
+            color: #18150c;
+            margin-bottom: 12px;
+            font-size: 1.15rem;
+        }
+
+        .blog-modal .modal-body p {
+            color: #444;
+            font-size: 1rem;
+            line-height: 1.75;
+            margin-bottom: 16px;
+        }
+
+        .blog-modal .modal-body .blog-tag {
+            display: inline-block;
+            background-color: var(--main-600);
+            color: #18150c;
+            padding: 4px 14px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            margin-bottom: 18px;
+        }
+
+        .blog-modal .modal-footer {
+            border-top: 1px solid #eee;
+            padding: 16px 30px;
+        }
+
+        .blog-modal .modal-footer .btn {
+            background-color: var(--main-600);
+            color: #18150c;
+            font-weight: 700;
+            border: 2px solid #18150c;
+            border-radius: 10px;
+            padding: 10px 28px;
+        }
+
+        .blog-modal .modal-footer .btn:hover {
+            background-color: #18150c;
+            color: #fff;
+        }
+
+        /* Expertisor Brand Slider - Premium White Box Styling */
+        .banner-brand-swiper .swiper-slide {
+            padding: 12px 20px;
+            background-color: #ffffff !important;
+            border: 2px solid #ffffff !important;
+            border-radius: 14px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100px;
+            box-shadow: 0 6px 15px rgba(24, 21, 12, 0.08);
+            margin: 10px 0;
+        }
+
+        .banner-brand-swiper .swiper-slide:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(24, 21, 12, 0.12);
+        }
+
+        .banner-brand-swiper .swiper-slide img {
+            max-width: 100%;
+            height: auto;
+            max-height: 65px;
+            object-fit: contain;
+            filter: none !important;
+            transition: transform 0.3s ease;
+        }
+
+        .banner-brand-swiper .swiper-slide:hover img {
+            transform: scale(1.05);
+        }
+
+        /* Read More - Premium Black Button */
+        .read-more-black {
+            background-color: #18150c !important;
+            /* Using project's dark color */
+            color: #fff !important;
+            border: 2px solid #18150c !important;
+            font-weight: 700 !important;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.4s ease;
+        }
+
+        .read-more-black:hover {
+            background-color: #fff !important;
+            color: #18150c !important;
+            border: 2px solid #18150c !important;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(24, 21, 12, 0.2);
+        }
+
+        /* Increase phone mockup size in payment solutions section */
+        .split-bg-yellow img[src*="payment-solutions-four-img1"] {
+            max-width: 85% !important;
+            width: 85% !important;
+            transform: scale(1);
+            transition: transform 0.5s ease;
+        }
+
+        .split-bg-yellow img[src*="payment-solutions-four-img1"]:hover {
+            transform: scale(1.05);
+        }
+
+        /* Split Background for Payment Solution Section */
+        @media (min-width: 992px) {
+            .split-bg-yellow {
+                position: relative;
+                background: #ffffff;
+            }
+
+            .split-bg-yellow::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 50%;
+                height: 100%;
+                background-color: var(--main-600);
+                z-index: 0;
+            }
+
+            .split-bg-yellow .container {
+                position: relative;
+                z-index: 1;
+            }
+        }
+
+        /* Responsive Fixes */
+        @media (max-width: 991px) {
+            .our-serbices-card {
+                clip-path: none !important;
+            }
+
+            .our-services-slider-card {
+                max-width: 280px !important;
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 575px) {
+            .top-header-item .tw-gap-5 {
+                gap: 1.5rem !important;
+            }
+        }
+
+        .gradient-text-yellow {
+            background: linear-gradient(360deg, rgba(255, 210, 0, 0) 25.83%, #FFD200 74.58%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .our-services-two-slider .swiper-pagination-bullet {
+            background-color: white !important;
+            opacity: 0.5;
+        }
+
+        .our-services-two-slider .swiper-pagination-bullet-active {
+            background-color: white !important;
+            opacity: 1;
+        }
+
+        /* Global Blue to Yellow Overrides */
+        :root {
+            --primary-600: #f5c518 !important;
+        }
+
+        .text-primary-600 {
+            color: #f5c518 !important;
+        }
+
+        /* Icons in specific sections */
+        .payment-solutions__button .ph-thumbs-up,
+        .payment-solutions__button .ph-headset,
+        .payment-solutions__button .ph-shield-check {
+            color: #18150c !important;
+        }
+
+        /* why-choose-therr-icon1 image icon â†’ Black */
+        img[src*="why-choose-therr-icon1"] {
+            filter: brightness(0) !important;
+        }
+
+        /* Ensure FAQ and Articles labels are yellow */
+        h5.text-primary-600 {
+            color: #f5c518 !important;
+        }
+
+        /* Turn blue star-icon2 into yellow */
+        img[src*="star-icon2"] {
+            filter: brightness(0) saturate(100%) invert(86%) sepia(35%) saturate(1243%) hue-rotate(351deg) brightness(105%) contrast(102%);
+        }
+    </style>
+</head>
+
+<body class="position-relative">
+
+    <!--==================== Preloader Start ====================-->
+    <div class="preloder">
+        <div class="position-relative tw-w-76-px tw-h-76-px d-flex justify-content-center align-items-center">
+            <img src="assets/images/logo/virtuapay-logo - V.png" alt="Img"
+                class="tw-w-14 position-absolute z-1 top-50 start-50 translate-middle">
+            <div class="preloder__exchange__img w-100 h-100 position-relative z-0">
+                <img src="assets/images/icon/preloder-img2.png" alt="Img" class="w-100 h-100 animation-rotation">
+            </div>
+        </div>
+    </div>
+    <!--==================== Preloader End ====================-->
+
+    <!--==================== Overlay Start ====================-->
+    <div class="overlay"></div>
+    <!--==================== Overlay End ====================-->
+
+    <!--==================== Sidebar Overlay End ====================-->
+    <div class="side-overlay"></div>
+    <!--==================== Sidebar Overlay End ====================-->
+
+    <!-- Custom Toast Message start -->
+    <div id="toast-container"></div>
+    <!-- Custom Toast Message End -->
+
+    <!-- ==================== Scroll to Top End Here ==================== -->
+    <div class="progress-wrap cursor-big">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+    <!-- ==================== Scroll to Top End Here ==================== -->
+
+    <!-- Custom Cursor Start -->
+    <div class="cursor"></div>
+    <span class="dot"></span>
+    <!-- Custom Cursor End -->
+
+    <!-- ==================== Mobile Menu Start Here ==================== -->
+    <div
+        class="mobile-menu d-lg-none d-block scroll-sm position-fixed bg-base-two-600 tw-w-300-px tw-h-screen overflow-y-auto tw-p-6 tw-z-999 tw--translate-x-full tw-pb-68 ">
+
+        <button type="button"
+            class="close-button position-absolute tw-end-0 top-0 tw-me-2 tw-mt-2 tw-w-605 tw-h-605 rounded-circle d-flex justify-content-center align-items-center text-white bg-neutral-200 hover-bg-neutral-900 hover-text-white">
+            <i class="ph ph-x"></i>
+        </button>
+
+        <div class="mobile-menu__inner">
+            <a href="index.html" class="mobile-menu__logo">
+                <img src="assets/images/logo/virtuapay-logo.png" alt="Logo">
+            </a>
+            <div class="mobile-menu__menu">
+                <!-- Nav menu Start -->
+                <ul class="nav-menu d-lg-flex align-items-center nav-menu--mobile d-block tw-mt-8">
+                    <li class="nav-menu__item">
+                        <a href="#home" class="nav-menu__link text-white tw-py-9 fw-semibold w-100">Home</a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a href="#why-choose-us" class="nav-menu__link tw-py-9 text-white fw-semibold w-100">About</a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a href="#quick-trusted-payments"
+                            class="nav-menu__link tw-py-9 text-white fw-semibold w-100">E-commerce sellers</a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a href="#our-latest-blog" class="nav-menu__link tw-py-9 text-white fw-semibold w-100">Blog</a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a href="#lets-start-a-conversation"
+                            class="nav-menu__link text-heading tw-py-9 fw-semibold w-100 text-white">Contact</a>
+                    </li>
+                </ul>
+                <!-- Nav menu End  -->
+
+            </div>
+        </div>
+    </div>
+    <!-- ==================== Mobile Menu End Here ==================== -->
+
+    <!-- ============ Top Header Section Start ================== -->
+    <div class="bg-main-600 tw-py-205 z-1 ">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between flex-nowrap flex-row-reverse flex-md-row">
+                <div class="d-flex align-items-center tw-gap-6 flex-nowrap">
+                    <div class="d-md-flex d-none align-items-center gap-2 flex-nowrap">
+                        <span class="tw-text-xl text-dark-600 fw-semibold">
+                            <i class="ph-bold ph-headset"></i>
+                        </span>
+                        <span class="text-dark-600 fw-semibold tw-text-lg">24/7 hours support</span>
+                    </div>
+                    <div class="d-md-flex d-none align-items-center gap-2 flex-nowrap">
+                        <span class="tw-text-xl text-dark-600 fw-semibold">
+                            <i class="ph-bold ph-envelope-simple"></i>
+                        </span>
+                        <a href="mailto:support@virtuapayments.com"
+                            class="text-dark-600 fw-semibold hover-text-white transition-all">support@virtuapayments.com</a>
+                    </div>
+                </div>
+                <div class="top-header-item d-flex align-items-center tw-gap-6 flex-nowrap">
+                    <div>
+                        <ul class="d-flex align-items-center tw-gap-5 flex-nowrap">
+                            <li class="tw-me-2">
+                                <a href="https://www.instagram.com/virtuapayment?igsh=MWU5M3RreWN0bGlmbQ%3D%3D"
+                                    class="tw-text-xl text-dark-600">
+                                    <i class="ph-bold ph-instagram-logo"></i>
+                                </a>
+                            </li>
+                            <li class="tw-me-2">
+                                <a href="https://www.facebook.com/profile.php?id=61588247163607&sk=directory_contact_info&fb_profile_edit_entry_point=%7B%22feature%22%3A%22profile_directory%22%2C%22click_point%22%3A%22pencil_edit_directory_section%22%2C%22additional_metadata%22%3A%7B%22section_type%22%3A%22contact_info%22%7D%7D"
+                                    class="tw-text-xl text-dark-600">
+                                    <i class="ph-bold ph-facebook-logo"></i>
+                                </a>
+                            </li>
+                            <li class="tw-me-2">
+                                <a href="https://www.linkedin.com/company/110243370/" class="tw-text-xl text-dark-600">
+                                    <i class="ph-bold ph-linkedin-logo"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://draft.blogger.com/u/7/blog/posts/8626495375645531207?hl=en&tab=jj"
+                                    class="tw-text-xl text-dark-600 d-flex align-items-center">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16.19 2H7.81C4.6 2 2 4.6 2 7.81V16.19C2 19.4 4.6 22 7.81 22H16.19C19.4 22 22 19.4 22 16.19V7.81C22 4.6 19.4 2 16.19 2ZM11.16 16.48H8.5V7.52H12.78C13.91 7.52 14.83 8.44 14.83 9.57C14.83 10.15 14.59 10.67 14.21 11.04C14.8 11.41 15.19 12.06 15.19 12.8C15.19 14.1 14.13 15.16 12.83 15.16H11.16V16.48ZM11.16 11.39H12.78C13.2 11.39 13.54 11.05 13.54 10.63C13.54 10.21 13.2 9.87 12.78 9.87H11.16V11.39ZM11.16 14.84H12.83C13.43 14.84 13.92 14.35 13.92 13.75C13.92 13.15 13.43 12.66 12.83 12.66H11.16V14.84Z"
+                                            fill="currentColor" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============ Top Header Section End ================== -->
+
+    <!-- ==================== Header Start Here ==================== -->
+    <header class="header bg-base-two-600 transition-all">
+        <div class="container container-two">
+            <nav class="d-flex align-items-center justify-content-between">
+                <!-- Logo Start -->
+                <div class="logo">
+                    <a href="index.html" class="link">
+                        <img src="assets/images/logo/virtuapay-logo.png" alt="img" class="tw-h-10">
+                    </a>
+                </div>
+                <!-- Logo End  -->
+
+                <!-- Menu Start  -->
+                <div class="header-menu d-lg-block d-none">
+                    <!-- Nav menu Start -->
+                    <ul class="nav-menu d-lg-flex align-items-center tw-gap-6">
+                        <li class="nav-menu__item">
+                            <a href="#home" class="nav-menu__link text-white tw-py-9 fw-semibold w-100">Home</a>
+                        </li>
+                        <li class="nav-menu__item">
+                            <a href="#why-choose-us"
+                                class="nav-menu__link tw-py-9 text-white fw-semibold w-100">About</a>
+                        </li>
+                        <li class="nav-menu__item">
+                            <a href="#quick-trusted-payments"
+                                class="nav-menu__link tw-py-9 text-white fw-semibold w-100">E-commerce sellers</a>
+                        </li>
+                        <li class="nav-menu__item">
+                            <a href="#our-latest-blog"
+                                class="nav-menu__link tw-py-9 text-white fw-semibold w-100">Blog</a>
+                        </li>
+                        <li class="nav-menu__item">
+                            <a href="#lets-start-a-conversation"
+                                class="nav-menu__link text-heading tw-py-9 fw-semibold w-100 text-white">Contact</a>
+                        </li>
+                    </ul>
+                    <!-- Nav menu End  -->
+                </div>
+                <!-- Menu End  -->
+
+                <div class="d-flex align-items-center tw-gap-3">
+                    <button type="button" class="toggle-mobileMenu leading-none d-lg-none ms-3 text-white tw-text-9">
+                        <i class="ph ph-list"></i>
+                    </button>
+                </div>
+                <!-- Header Right End  -->
+            </nav>
+        </div>
+    </header>
+    <!-- ==================== Header End Here ==================== -->
+
+    <!-- ==================== Banner Section Start ================== -->
+    <section id="home" class="pt-120 bg-base-two-600 z-1 position-relative overflow-hidden">
+        <img src="assets/images/shape/banner-scroll-img1.png" alt="img"
+            class="position-absolute inset-block-end-80px inset-inline-start-7-persent d-lg-block d-none animation-moveTopBottom__two !tw-hidden lg:!tw-block">
+        <img src="assets/images/shape/circle-shape-img1.png" alt="img"
+            class="position-absolute inset-block-start-79px inset-inline-start-7-persent d-lg-block d-none animation-rotation__two">
+
+        <div class="container">
+            <div class="position-relative">
+                <div class="row flex-wrap gy-4">
+                    <div class="col-lg-6">
+                        <div class="max-w-571-px">
+                            <div class="tw-mb-10 position-relative">
+                                <div class="d-flex align-items-center gap-1 tw-mb-3" data-aos="fade-up"
+                                    data-aos-duration="800">
+                                    <img src="assets/images/icon/star-icon1.png" alt="star">
+                                    <span class="fw-normal tw-text-xl text-neutral-10 cursor-big">EASY PAYMENT</span>
+                                </div>
+                                <div class="position-relative" data-aos="fade-up" data-aos-duration="1000">
+                                    <h2
+                                        class="banner-item-title text-neutral-10 fw-normal tw-mb-3 tw-text-12 cursor-big h1">
+                                        Shop Instantly from Reels with Secure Payments | Virtua Pay</h2>
+                                    <img src="assets/images/shape/line-shape1.png" alt="Image"
+                                        class="banner-shape-one position-absolute max-w-411-px z-n1 inset-block-start-62px inset-inline-end--30px d-lg-block d-none">
+                                </div>
+                                <p class="banner-item-text text-neutral-10 fw-normal tw-text-xl line-clamp-2"
+                                    data-aos="fade-up" data-aos-duration="1100">Virtua Pay is redefining online shopping
+                                    by connecting reel-based product discovery with secure and instant payments.<br>See
+                                    a product in a reel, tap the Virtua Pay button, and complete your purchase in
+                                    seconds â€” simple, fast, and safe.</p>
+                            </div>
+                            <div class="d-flex align-items-center tw-gap-7 flex-wrap position-relative"
+                                data-aos="fade-up" data-aos-duration="1200">
+                                <div>
+                                    <a href="javascript:void(0)"
+                                        class="banner-item-link bg-main-600 text-dark-600 fw-semibold  tw-text-lg tw-px-5 tw-py-3 border-two-px-solid rounded-3 hover-text-dark-600 tw-duration-500">Start
+                                        Earning Today</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="d-lg-block d-none text-end" data-aos="fade-up" data-aos-duration="1500">
+                            <img src="assets/images/thumbs/new-hand-img.png" alt="img" class="margin-top--40px">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="banner-item">
+                    <div
+                        class="tw-py-5 tw-px-5 rounded-3 d-inline-flex align-items-center tw-gap-3 position-absolute inset-block-start-70-persent inset-inline-start-42-persent z-1 max-w-263 animation-Updowm__two">
+                        <div class="d-flex align-items-center ">
+                            <!-- <img src="assets/images/thumbs/banner-img4.png" alt="img"> -->
+                            <!-- <img src="assets/images/thumbs/banner-img3.png" alt="img" class="margin-left--16px"> -->
+                            <!-- <img src="assets/images/thumbs/banner-img2.png" alt="img" class="margin-left--16px"> -->
+                        </div>
+                        <div class="tw-bg-white tw-py-3 tw-px-4">
+                            <!-- <h4 class="fw-normal tw-text-6 counter">25k+</h4> -->
+                            <!-- <span class="fw-normal tw-text-lg text-dark-500">Active users </span> -->
+                            <img src="assets/images/virtuapay-coin.jpg"
+                                class="img-fluid tw-max-w-30px tw-max-h-30px rounded-circle" alt="Virtua Pay Coin">
+                        </div>
+                    </div>
+                </div>
+                <img src="assets/images/shape/banner-shape-1.png" alt="igm"
+                    class="position-absolute inset-block-start-44-persent inset-inline-start-50-persent z-n1 d-lg-block d-none animation-pulse__two"
+                    style="mix-blend-mode: lighten;">
+                <img src="assets/images/shape/arrow-shape1.png" alt="img"
+                    class="arrow-shape-one position-absolute inset-inline-start-44-persent inset-block-start--10-persent z-n1 d-lg-block d-none animate-wobble__two">
+                <img src="assets/images/shape/banner-shape2.png" alt="img"
+                    class="banner-shape-two position-absolute inset-inline-end--120px inset-block-end-120px z-n1 d-lg-block d-none animation-rotation__two"
+                    style="mix-blend-mode: lighten;">
+                <div
+                    class="banner-shape-five tw-py-5 tw-px-6 rounded-3 max-w-261 position-absolute inset-block-start-50px inset-inline-end--120px d-lg-block d-none z-1 animation-Updowm__two">
+                    <!-- <span class="tw-text-lg fw-semibold text-dark-600 tw-mb-3">Payment Received</span> -->
+                    <!-- <h4 class="fw-normal tw-mb-3 counter">+35,890.00</h4> -->
+                    <div class="d-flex align-items-center tw-gap-2 justify-content-between">
+                        <!-- <span class="tw-text-lg fw-semibold text-dark-600">1st Jan, 2025</span> -->
+                        <div class="d-flex align-items-center tw-gap-2">
+                            <!-- <span class="tw-text-lg fw-semibold text-main-600">3.09%</span> -->
+                            <span class="tw-text-xl fw-medium text-main-600">
+                                <img src="assets/images/virtuapay-coin.jpg" alt="Virtua Pay Coin"
+                                    class="img-fluid rounded-circle tw-max-w-40px">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="banner-brand-item bg-main-600 tw-pt-15 tw-ps-15 tw-pb-8 tw-pe-7  tw-w-1662-px tw-w-100vw banner-slider-bg-clip-path border-top-left-80-px margin-top--94px">
+                <h3 class=" fw-normal cursor-big tw-mb-2" data-aos="fade-up" data-aos-duration="800">JoinÂ 10,245+Â 
+                </h3>
+                <h5 class="fw-normal tw-mb-8" data-aos="fade-up" data-aos-duration="1000">companies whoâ€™ve reached
+                </h5>
+
+                <div class="swiper banner-brand-swiper overflow-hidden z-1">
+                    <div class="swiper-wrapper d-flex align-items-center w-100">
+                        <div class="swiper-slide">
+                            <img src="assets/images/logo/banner-slider-img1.png" alt="Expertisor Academy">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/logo/banner-slider-img2.png" alt="Image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/logo/banner-slider-img3.png" alt="Image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/logo/banner-slider-img4.png" alt="Image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/logo/banner-slider-img6.png" alt="Image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/logo/banner-slider-img7.png" alt="Image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/logo/banner-slider-img8.png" alt="Image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/logo/banner-slider-img9.png" alt="Image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/logo/banner-slider-img10.png" alt="Image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/logo/banner-slider-img11.png" alt="Image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/logo/banner-slider-img12.png" alt="Image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/logo/banner-slider-img13.png" alt="Image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/logo/banner-slider-img14.png" alt="Image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/logo/banner-slider-img15.png" alt="Image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/logo/banner-slider-img16.png" alt="Image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/logo/banner-slider-img17.png" alt="Image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/logo/banner-slider-img18.png" alt="Image">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- ==================== Banner Section End ================== -->
+
+    <!-- =================== why choose us section start ======================= -->
+    <section id="why-choose-us" class="py-140 z-1 bg-white overflow-hidden">
+        <div class="container">
+            <div class="row gy-4 align-items-end">
+                <div class="col-lg-5">
+                    <div class="tw-mb-10">
+                        <div class="d-flex align-items-center tw-gap-1 tw-mb-3" data-aos="fade-up"
+                            data-aos-duration="600">
+                            <img src="assets/images/icon/star-icon1.png" alt="Image">
+                            <h5 class="fw-normal text-main-600">Why Choose Us</h5>
+                        </div>
+                        <h2 class="fw-normal text-dark-700 cursor-big tw-mb-6" data-aos="fade-up"
+                            data-aos-duration="800">Why Choose Virtua Pay for Social Commerce</h2>
+                        <p class="fw-normal tw-text-lg text-dark-500 tw-mb-8" data-aos="fade-up"
+                            data-aos-duration="900">
+                            We seamlessly bridge the gap between social media discovery and instant checkout, making
+                            shopping and selling easier than ever.
+                        </p>
+                        <div class="position-relative z-1 tw-mb-10" data-aos="fade-up" data-aos-duration="1000">
+                            <a href="about-us-other.html"
+                                class="choose-us-three-link text-dark-700 fw-semibold tw-text-lg bg-main-600 tw-px-5 tw-py-205 rounded-3 border-two-px-solid hover-text-dark-600">MORE
+                                ABOUT US</a>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="600">
+                        <img src="assets/images/thumbs/virtuapay-woman-black-shirt.png" alt="Virtua Pay Customer"
+                            class="bg-img tw-rounded-xl w-100">
+                    </div>
+                </div>
+                <div class="col-xl-7">
+                    <!-- Animated Floating Elements for Empty Space -->
+                    <div class="d-none d-xl-flex justify-content-end tw-mb-12 position-relative w-100"
+                        style="min-height: 140px;">
+                        <div class="bg-dark-600 rounded-pill tw-px-6 tw-py-3 d-inline-flex align-items-center tw-gap-3 shadow-lg position-absolute tw-end-0 tw-me-20"
+                            style="top: 0; animation: moveTopBottom 3s ease-in-out infinite alternate;">
+                            <span
+                                class="tw-w-10 tw-h-10 bg-main-600 rounded-circle d-flex align-items-center justify-content-center text-dark-600 tw-text-xl">
+                                <i class="ph-fill ph-coin"></i>
+                            </span>
+                            <div class="text-start">
+                                <span class="d-block text-white fw-bold tw-text-sm">Earn Virtua Coins</span>
+                                <span class="d-block text-main-600 tw-text-xs">While Shopping</span>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-pill tw-px-6 tw-py-3 d-inline-flex align-items-center tw-gap-3 shadow-lg border-two-px-solid border-main-600 position-absolute tw-end-0"
+                            style="bottom: 0; animation: moveTopBottom 4s ease-in-out infinite alternate-reverse;">
+                            <span
+                                class="tw-w-10 tw-h-10 bg-base-two-10 rounded-circle d-flex align-items-center justify-content-center text-main-600 tw-text-xl">
+                                <i class="ph-fill ph-instagram-logo"></i>
+                            </span>
+                            <div class="text-start">
+                                <span class="d-block text-dark-600 fw-bold tw-text-sm">Checkout Instantly</span>
+                                <span class="d-block text-dark-500 tw-text-xs">Directly from Reels</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="one-platform__title d-flex flex-column tw-gap-4 w-100">
+
+                        <div class="payment-solutions__item cursor-pointer" data-aos="fade-up" data-aos-duration="800">
+                            <div
+                                class="payment-solutions__button bg-main-600 w-100 tw-rounded-md tw-px-6 tw-py-4 border-base-two-600 border-start border-end d-flex align-items-center tw-gap-4">
+                                <span
+                                    class="tw-w-13 tw-h-13 bg-base-two-10 tw-rounded-md text-base-two-600 tw-text-7 d-flex align-items-center justify-content-center">
+                                    <i class="ph-fill ph-thumbs-up"></i>
+                                </span>
+                                <h4 class="fw-normal text-dark-600 cursor-big tw-mb-0">
+                                    Instant Payouts</h4>
+                            </div>
+                            <div class="payment-solutions__content w-100 bg-base-two-600 tw-rounded-xl tw-px-8 tw-py-8">
+                                <span
+                                    class="tw-w-15 tw-h-15 bg-white tw-rounded-md d-flex align-items-center justify-content-center tw-mb-8">
+                                    <i class="ph-fill ph-thumbs-up text-base-two-600 tw-text-7"></i>
+                                </span>
+                                <h4 class="fw-normal cursor-big text-white tw-mb-3">Instant Payouts</h4>
+                                <p class="fw-normal tw-text-405 text-white tw-mb-17">Sellers receive their funds
+                                    instantly after a successful transaction. No more waiting days for processing.</p>
+                                <a href="about-us-other.html"
+                                    class="fw-semibold tw-text-4 text-dark-600 bg-white tw-px-6 tw-py-3 tw-rounded-md w-100 text-center ">
+                                    LEARN MORE
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="payment-solutions__item cursor-pointer" data-aos="fade-up" data-aos-duration="1000">
+                            <div
+                                class="payment-solutions__button bg-main-600 w-100 tw-rounded-md tw-px-6 tw-py-4 border-base-two-600 border-start border-end d-flex align-items-center tw-gap-4">
+                                <span
+                                    class="tw-w-13 tw-h-13 bg-base-two-10 tw-rounded-md text-base-two-600 tw-text-7 d-flex align-items-center justify-content-center">
+                                    <img src="assets/images/icon/why-choose-therr-icon1.png" alt="Image"
+                                        class="tw-filter-main">
+                                </span>
+                                <h4 class="fw-normal text-dark-600 cursor-big tw-mb-0">
+                                    Zero Hidden Fees</h4>
+                            </div>
+                            <div class="payment-solutions__content w-100 bg-base-two-600 tw-rounded-xl tw-px-8 tw-py-8">
+                                <span
+                                    class="tw-w-15 tw-h-15 bg-white tw-rounded-md d-flex align-items-center justify-content-center tw-mb-8">
+                                    <img src="assets/images/icon/why-choose-therr-icon1.png" alt="Image"
+                                        class="tw-filter-main">
+                                </span>
+                                <h4 class="fw-normal cursor-big text-white tw-mb-3">Zero Hidden Fees</h4>
+                                <p class="fw-normal tw-text-405 text-white tw-mb-17">Enjoy transparent pricing with
+                                    absolutely no hidden charges. What you see is exactly what you get when selling or
+                                    buying.</p>
+                                <a href="about-us-other.html"
+                                    class="fw-semibold tw-text-4 text-dark-600 bg-white tw-px-6 tw-py-3 tw-rounded-md w-100 text-center ">
+                                    LEARN MORE
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="payment-solutions__item cursor-pointer" data-aos="fade-up" data-aos-duration="1200">
+                            <div
+                                class="payment-solutions__button bg-main-600 w-100 tw-rounded-md tw-px-6 tw-py-4 border-base-two-600 border-start border-end d-flex align-items-center tw-gap-4">
+                                <span
+                                    class="tw-w-13 tw-h-13 bg-base-two-10 tw-rounded-md text-base-two-600 tw-text-7 d-flex align-items-center justify-content-center">
+                                    <i class="ph-fill ph-headset"></i>
+                                </span>
+                                <h4 class="fw-normal text-dark-600 cursor-big tw-mb-0">
+                                    Live Support</h4>
+                            </div>
+                            <div class="payment-solutions__content w-100 bg-base-two-600 tw-rounded-xl tw-px-8 tw-py-8">
+                                <span
+                                    class="tw-w-15 tw-h-15 bg-white tw-rounded-md d-flex align-items-center justify-content-center tw-mb-8">
+                                    <i class="ph-fill ph-headset text-base-two-600 tw-text-7"></i>
+                                </span>
+                                <h4 class="fw-normal cursor-big text-white tw-mb-3">Live Support</h4>
+                                <p class="fw-normal tw-text-405 text-white tw-mb-17">Our dedicated support team is
+                                    available round the clock to assist you with any payment, order, or account issues.
+                                </p>
+                                <a href="about-us-other.html"
+                                    class="fw-semibold tw-text-4 text-dark-600 bg-white tw-px-6 tw-py-3 tw-rounded-md w-100 text-center ">
+                                    LEARN MORE
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="payment-solutions__item cursor-pointer" data-aos="fade-up" data-aos-duration="1300">
+                            <div
+                                class="payment-solutions__button bg-main-600 w-100 tw-rounded-md tw-px-6 tw-py-4 border-base-two-600 border-start border-end d-flex align-items-center tw-gap-4">
+                                <span
+                                    class="tw-w-13 tw-h-13 bg-base-two-10 tw-rounded-md text-base-two-600 tw-text-7 d-flex align-items-center justify-content-center">
+                                    <i class="ph-fill ph-shield-check"></i>
+                                </span>
+                                <h4 class="fw-normal text-dark-600 cursor-big tw-mb-0">
+                                    Secure Transactions</h4>
+                            </div>
+                            <div class="payment-solutions__content w-100 bg-base-two-600 tw-rounded-xl tw-px-8 tw-py-8">
+                                <span
+                                    class="tw-w-15 tw-h-15 bg-white tw-rounded-md d-flex align-items-center justify-content-center tw-mb-8">
+                                    <i class="ph-fill ph-shield-check text-base-two-600 tw-text-7"></i>
+                                </span>
+                                <h4 class="fw-normal cursor-big text-white tw-mb-3">Secure Transactions</h4>
+                                <p class="fw-normal tw-text-405 text-white tw-mb-17">We use advanced encryption and
+                                    fraud protection to ensure every transaction is safe, secure, and worry-free.</p>
+                                <a href="about-us-other.html"
+                                    class="fw-semibold tw-text-4 text-dark-600 bg-white tw-px-6 tw-py-3 tw-rounded-md w-100 text-center ">
+                                    LEARN MORE
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- =================== why choose us section end ======================= -->
+
+    <!-- ========================== Key Features Three Section Start ========================== -->
+    <section class="py-140 bg-white">
+        <div class="container">
+            <div class="text-center tw-mb-80-px">
+                <div class="d-flex align-items-center justify-content-center tw-gap-1 tw-mb-3" data-aos="fade-up"
+                    data-aos-duration="600">
+                    <img src="assets/images/icon/star-icon1.png" alt="Image">
+                    <h5 class="fw-normal text-main-600">Key Features</h5>
+                </div>
+                <h2 class="fw-normal text-dark-600 tw-mb-3 cursor-big" data-aos="fade-up" data-aos-duration="800">Our
+                    Main Features</h2>
+                <p class="fw-normal tw-text-lg text-dark-500" data-aos="fade-up" data-aos-duration="1000">Our online
+                    banking platform offers these main features</p>
+            </div>
+
+            <div class="row gy-4 align-items-center justify-content-center">
+
+                <!-- Left Column -->
+                <div class="col-lg-3 col-md-6 order-lg-1 order-1">
+                    <div class="d-flex flex-column gap-4">
+                        <!-- Secure Transactions -->
+                        <div class="group group-item tw-mb-4" data-aos="fade-up" data-aos-duration="600">
+                            <div
+                                class="tw-px-6 tw-py-6 rounded-3 border-bottom-black-2px group-hover-bg-base-two-600 tw-duration-400">
+                                <span
+                                    class="tw-w-72px tw-h-72-px bg-base-two-600 rounded-circle d-flex align-items-center justify-content-center tw-mb-10 group-hover-bg-main-600 tw-duration-400">
+                                    <i class="ph ph-shield-check text-white tw-text-3xl"></i>
+                                </span>
+                                <h5 class="fw-normal text-dark-600 tw-mb-2 group-hover-text-white tw-duration-400">
+                                    Secure Transactions</h5>
+                                <p class="fw-normal tw-text-lg text-dark-500 group-hover-text-white tw-duration-400">We
+                                    prioritize your financial safety with advanced encryption & multi-factor
+                                    authentication.</p>
+                            </div>
+                        </div>
+
+                        <!-- Real-Time Alerts -->
+                        <div class="group group-item" data-aos="fade-up" data-aos-duration="800">
+                            <div
+                                class="tw-px-6 tw-py-6 rounded-3 border-bottom-black-2px group-hover-bg-base-two-600 tw-duration-400">
+                                <span
+                                    class="tw-w-72px tw-h-72-px bg-base-two-600 rounded-circle d-flex align-items-center justify-content-center tw-mb-10 group-hover-bg-main-600 tw-duration-400">
+                                    <i class="ph ph-bell text-white tw-text-3xl"></i>
+                                </span>
+                                <h5 class="fw-normal text-dark-600 tw-mb-2 group-hover-text-white tw-duration-400">
+                                    Real-Time Alerts</h5>
+                                <p class="fw-normal tw-text-lg text-dark-500 group-hover-text-white tw-duration-400">
+                                    Stay informed with instant notifications & account activities and balance updates.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Center Column (Phone) -->
+                <div class="col-lg-6 col-md-12 order-lg-2 order-3 text-center">
+                    <div class="d-inline-block position-relative tw-pb-20" data-aos="zoom-in" data-aos-duration="1500">
+                        <!-- Rich Dark Yellow Circular Background -->
+                        <!-- <div class="position-absolute top-50 start-50 translate-middle rounded-circle" >
+                            <img src="assets/images/thumbs/virtual-pay-center-circle.png" alt="Virtual Pay Center Circle" class="img-fluid">
+                        </div> -->
+                        <!-- Phone Mockup Fixed Image -->
+                        <img src="assets/images/thumbs/virtuapay-dashboard-mockup-fixed.svg" alt="Phone"
+                            class="img-fluid position-relative z-1" style="max-width: 650px; width: 100%;">
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="col-lg-3 col-md-6 order-lg-3 order-2">
+                    <div class="d-flex flex-column gap-4">
+                        <!-- 24/7 Account Access -->
+                        <div class="group group-item tw-mb-4" data-aos="fade-up" data-aos-duration="1000">
+                            <div
+                                class="tw-px-6 tw-py-6 rounded-3 border-bottom-black-2px group-hover-bg-base-two-600 tw-duration-400">
+                                <span
+                                    class="tw-w-72px tw-h-72-px bg-base-two-600 rounded-circle d-flex align-items-center justify-content-center tw-mb-10 group-hover-bg-main-600 tw-duration-400">
+                                    <i class="ph ph-clock-countdown text-white tw-text-3xl"></i>
+                                </span>
+                                <h5 class="fw-normal text-dark-600 tw-mb-2 group-hover-text-white tw-duration-400">24/7
+                                    Account Access</h5>
+                                <p class="fw-normal tw-text-lg text-dark-500 group-hover-text-white tw-duration-400">
+                                    Manage your finances anytime, anywhere, with our user-friendly mobile and web
+                                    interfaces.</p>
+                            </div>
+                        </div>
+
+                        <!-- Customer Support -->
+                        <div class="group group-item" data-aos="fade-up" data-aos-duration="1200">
+                            <div
+                                class="tw-px-6 tw-py-6 rounded-3 border-bottom-black-2px group-hover-bg-base-two-600 tw-duration-400">
+                                <span
+                                    class="tw-w-72px tw-h-72-px bg-base-two-600 rounded-circle d-flex align-items-center justify-content-center tw-mb-10 group-hover-bg-main-600 tw-duration-400">
+                                    <i class="ph ph-headset text-white tw-text-3xl"></i>
+                                </span>
+                                <h5 class="fw-normal text-dark-600 tw-mb-2 group-hover-text-white tw-duration-400">
+                                    Customer Support</h5>
+                                <p class="fw-normal tw-text-lg text-dark-500 group-hover-text-white tw-duration-400">
+                                    Access dedicated assistance through multiple channels to address your banking needs.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ========================== Key Features Three Section End ========================== -->
+
+    <!-- ================================= Marquee Section Start =============================== -->
+    <div class="slider__marquee style2 bg-base-two-600 tw-py-8">
+        <div class="marquee_mode">
+            <div class="item tw-gap-10">
+                <img src="assets/images/icon/banner-three-marque-icon1.png " alt="img">
+                <h3 class="fw-normal text-white hover-text-main-600 tw-duration-500"> Digital Banking</h3>
+            </div>
+            <div class="item tw-gap-10">
+                <img src="assets/images/icon/banner-three-marque-icon1.png " alt="img">
+                <h3 class="fw-normal text-white hover-text-main-600 tw-duration-500">Instant Online Debit</h3>
+            </div>
+            <div class="item tw-gap-10">
+                <img src="assets/images/icon/banner-three-marque-icon1.png " alt="img">
+                <h3 class="fw-normal text-white hover-text-main-600 tw-duration-500"> Cash Back & Perks</h3>
+            </div>
+            <div class="item tw-gap-10">
+                <img src="assets/images/icon/banner-three-marque-icon1.png " alt="img">
+                <h3 class="fw-normal text-white hover-text-main-600 tw-duration-500">Instant Online Debit</h3>
+            </div>
+        </div>
+    </div>
+    <!-- ==================== Banner Three Section End ================== -->
+
+    <!-- ========================== payment solution four section start ========================== -->
+    <section id="quick-trusted-payments" class="py-140 split-bg-yellow">
+        <div class="container-fluid px-0">
+            <div class="row gx-0 gy-5 align-items-center">
+                <div class="col-lg-6 d-flex justify-content-center p-0">
+                    <img src="assets/images/thumbs/payment-solutions-four-img1.svg" alt="img" data-aos="zoom-in"
+                        data-aos-duration="1500">
+                </div>
+                <div class="col-lg-6 px-lg-5 px-4">
+                    <div class="d-flex flex-column align-items-center text-center">
+                        <div class="d-flex align-items-center justify-content-center tw-gap-1 tw-mb-3"
+                            data-aos="fade-up" data-aos-duration="600">
+                            <img src="assets/images/icon/star-icon1.png" alt="">
+                            <h5 class="fw-normal text-main-600">Quick & Trusted Payments</h5>
+                        </div>
+                        <h2 class="tw-mb-3" data-aos="fade-up" data-aos-duration="800">Secure, Fast, and Reliable <br>
+                            payment solutions</h2>
+                        <p class="fw-normal tw-text-405 text-dark-500 max-w-554-px tw-mb-8" data-aos="fade-up"
+                            data-aos-duration="1000">Experience secure, fast, and reliable payment solutions designed to
+                            simplify transactions, ensuring safety and efficiency for businesses and individuals alike
+                        </p>
+                        <div class="d-flex align-items-center justify-content-center tw-gap-2 flex-wrap tw-mb-12 w-100">
+                            <div class="text-start" data-aos="fade-up" data-aos-duration="1100">
+                                <div class="d-flex align-items-center tw-gap-1 tw-mb-4">
+                                    <span class="tw-text-5 text-base-two-600">
+                                        <i class="ph ph-check-circle"></i>
+                                    </span>
+                                    <span class="fw-semibold tw-text-405 text-dark-600">Fast and seamless
+                                        transactions</span>
+                                </div>
+                                <div class="d-flex align-items-center tw-gap-1 tw-mb-4">
+                                    <span class="tw-text-5 text-base-two-600">
+                                        <i class="ph ph-check-circle"></i>
+                                    </span>
+                                    <span class="fw-semibold tw-text-405 text-dark-600">Zero hidden fees</span>
+                                </div>
+                                <div class="d-flex align-items-center tw-gap-1 tw-mb-4">
+                                    <span class="tw-text-5 text-base-two-600">
+                                        <i class="ph ph-check-circle"></i>
+                                    </span>
+                                    <span class="fw-semibold tw-text-405 text-dark-600">Instant payment
+                                        notifications</span>
+                                </div>
+                            </div>
+                            <div class="text-start" data-aos="fade-up" data-aos-duration="1200">
+                                <div class="d-flex align-items-center tw-gap-1 tw-mb-4">
+                                    <span class="tw-text-5 text-base-two-600">
+                                        <i class="ph ph-check-circle"></i>
+                                    </span>
+                                    <span class="fw-semibold tw-text-405 text-dark-600">Multi-currency support</span>
+                                </div>
+                                <div class="d-flex align-items-center tw-gap-1 tw-mb-4">
+                                    <span class="tw-text-5 text-base-two-600">
+                                        <i class="ph ph-check-circle"></i>
+                                    </span>
+                                    <span class="fw-semibold tw-text-405 text-dark-600">Global payment
+                                        accessibility</span>
+                                </div>
+                                <div class="d-flex align-items-center tw-gap-1 tw-mb-4">
+                                    <span class="tw-text-5 text-base-two-600">
+                                        <i class="ph ph-check-circle"></i>
+                                    </span>
+                                    <span class="fw-semibold tw-text-405 text-dark-600">24/7 customer support</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="position-relative z-1 max-w-700-px w-100 d-flex flex-column flex-sm-row justify-content-center tw-gap-10"
+                            style="background: transparent !important;" data-aos="fade-up" data-aos-duration="1300">
+                            <a href="javascript:void(0)"
+                                class="payment-solution__link bg-main-600 tw-py-5 tw-px-10 text-dark-700 fw-semibold tw-text-7 tw-rounded-md d-flex align-items-center justify-content-center tw-gap-4 hover-text-dark-600">
+                                <span class="tw-text-xl d-flex">
+                                    <i class="ph-fill ph-google-play-logo"></i>
+                                </span>
+                                Google Play
+                            </a>
+                            <a href="javascript:void(0)"
+                                class="payment-solution__link bg-main-600 tw-py-5 tw-px-10 text-dark-700 fw-semibold tw-text-7 tw-rounded-md d-flex align-items-center justify-content-center tw-gap-4 hover-text-dark-600">
+                                <span class="tw-text-xl d-flex">
+                                    <i class="ph-fill ph-apple-logo"></i>
+                                </span>
+                                App Store
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========================== payment solution four section end ========================== -->
+
+    <!-- ================== How It Works Two Section Start ===================== -->
+    <section class="py-140 z-1 bg-dark-600 overflow-hidden">
+        <div class="container">
+
+            <div class="d-flex align-items-center tw-gap-4 justify-content-between tw-mb-80-px flex-wrap">
+                <div class="max-w-330">
+                    <div class="d-flex align-items-center tw-gap-1 tw-mb-3" data-aos="fade-up" data-aos-duration="600">
+                        <img src="assets/images/icon/star-icon1.png" alt="Image">
+                        <h5 class="text-main-600 fw-normal">How it Works</h5>
+                    </div>
+                    <h2 class="fw-normal cursor-big text-white" data-aos="fade-up" data-aos-duration="800">Just Few
+                        Steps To Start
+                    </h2>
+                </div>
+                <div class="max-w-416">
+                    <p class="fw-normal tw-text-lg text-white tw-mb-6" data-aos="fade-up" data-aos-duration="900">
+                        Simple and hassle-free! Just follow three easy steps to get started effortlessly today.</p>
+                    <div class="position-relative" data-aos="fade-up" data-aos-duration="1000">
+                        <a href="log-in.html"
+                            class="works-two-link bg-main-600 rounded-3 tw-px-5 tw-py-205 border-two-px-solid text-dark-700 fw-semibold hover-text-dark-600">
+                            OPEN A FREE ACCOUNT
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row gy-4">
+
+                <div class="col-xl-4 col-md-6">
+                    <div class="group" data-aos="fade-up" data-aos-duration="1000">
+                        <div
+                            class="how-it-work-two-item-one bg-white tw-transition-04-secend tw-px-10 tw-py-10 rounded-4 position-relative margin-block-start-100px">
+                            <span
+                                class="tw-w-84px tw-h-84-px bg-base-two-10 rounded-circle d-flex align-items-center justify-content-center tw-mb-12">
+                                <span
+                                    class="tw-w-72px tw-h-72-px bg-main-600 rounded-circle tw-text-8 text-dark-600 d-flex align-items-center justify-content-center">
+                                    <i class="ph ph-user-check"></i>
+                                </span>
+                            </span>
+                            <h4 class="fw-normal text-dark-600 tw-mb-3">Discover & Shop</h4>
+                            <p class="fw-normal tw-text-lg text-dark-600">Find products directly in your favorite social
+                                media reels and posts.</p>
+                            <h2
+                                class="fw-normal h1 gradient-text-yellow tw-text-140-px position-absolute tw-end-0 top-0 tw-me-10 tw-mt-15 cursor-big">
+                                1</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-6">
+                    <div class="group" data-aos="fade-up" data-aos-duration="800">
+                        <div
+                            class="how-it-work-two-item-two bg-white tw-transition-04-secend tw-px-10 tw-py-10 rounded-4 position-relative margin-block-start-50px">
+                            <span
+                                class="tw-w-84px tw-h-84-px bg-base-two-10 rounded-circle d-flex align-items-center justify-content-center tw-mb-12">
+                                <span
+                                    class="tw-w-72px tw-h-72-px bg-main-600 rounded-circle tw-text-8 text-dark-600 d-flex align-items-center justify-content-center">
+                                    <i class="ph ph-wallet"></i>
+                                </span>
+                            </span>
+                            <h4 class="fw-normal text-dark-600 tw-mb-3">Instant Checkout</h4>
+                            <p class="fw-normal tw-text-lg text-dark-600">Click the Virtua Pay link to purchase
+                                instantly with bank-level security.</p>
+                            <h2
+                                class="fw-normal gradient-text-yellow h1 tw-text-140-px position-absolute tw-end-0 top-0 tw-me-10 tw-mt-15 cursor-big">
+                                2</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-6">
+                    <div class="group" data-aos="fade-up" data-aos-duration="600">
+                        <div
+                            class="how-it-work-two-item-three bg-white tw-transition-04-secend tw-px-10 tw-py-10 rounded-4 position-relative">
+                            <span
+                                class="tw-w-84px tw-h-84-px bg-base-two-10 rounded-circle d-flex align-items-center justify-content-center tw-mb-12">
+                                <span
+                                    class="tw-w-72px tw-h-72-px bg-main-600 rounded-circle tw-text-8 text-dark-600 d-flex align-items-center justify-content-center">
+                                    <i class="ph ph-paper-plane-tilt"></i>
+                                </span>
+                            </span>
+                            <h4 class="fw-normal text-dark-600 tw-mb-3">Earn Rewards</h4>
+                            <p class="fw-normal tw-text-lg text-dark-600">Complete your purchase safely and earn Virtua
+                                Coins on every transaction.</p>
+                            <h2
+                                class="fw-normal gradient-text-yellow h1 tw-text-140-px position-absolute tw-end-0 top-0 tw-me-10 tw-mt-15 cursor-big">
+                                3</h2>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- ================== How It Works Two Section End ===================== -->
+
+    <!-- =============== FAQ Two Section Start ================ -->
+    <section class="bg-white py-140 z-1 overflow-hidden">
+        <div class="container">
+            <div class="tw-mb-80-px text-center">
+                <div class="d-flex align-items-center justify-content-center text-center tw-mb-3" data-aos="fade-up"
+                    data-aos-duration="800">
+                    <span><img src="assets/images/icon/star-icon1.png" alt="Image"></span>
+                    <h5 class="text-primary-600 fw-normal cursor-big">Faq</h5>
+                </div>
+                <div class="max-w-560 mx-auto">
+                    <h2 class="fw-normal text-dark-600 cursor-big" data-aos="fade-up" data-aos-duration="1000">
+                        Frequently Asked Questions</h2>
+                </div>
+            </div>
+
+            <div class="accordion d-flex justify-content-center tw-gap-6 flex-wrap" id="accordionExample">
+                <div class="max-w-636 w-100">
+                    <div class="accordion-item tw-mb-6 rounded-3 bg-white border-neutral-1px-solid" data-aos="fade-up"
+                        data-aos-duration="600">
+                        <h2 class="accordion-header cursor-big">
+                            <button class="accordion-button bg-white rounded-3 tw-text-xl tw-gap-1" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                aria-controls="collapseOne">
+                                What services do you offer?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="fw-normal tw-text-lg text-dark-600">Virtua Pay offers a seamless connection
+                                    between social media product discovery and instant payments. Our services include
+                                    secure reel-based shopping, instant fund transfers, bill payments, and our unique
+                                    Virtua Coins loyalty program.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item tw-mb-6 rounded-3 bg-white border-neutral-1px-solid" data-aos="fade-up"
+                        data-aos-duration="800">
+                        <h2 class="accordion-header cursor-big">
+                            <button class="accordion-button collapsed bg-white rounded-3 tw-text-xl tw-gap-1"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                aria-expanded="false" aria-controls="collapseTwo">
+                                How do I access online and mobile banking?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="fw-normal tw-text-lg text-dark-600">You can access your account through our
+                                    official mobile app (available on iOS and Android) or via our secure web dashboard.
+                                    Use your registered email or phone number and your multi-factor authentication for
+                                    maximum security.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item tw-mb-6 rounded-3 bg-white border-neutral-1px-solid" data-aos="fade-up"
+                        data-aos-duration="1000">
+                        <h2 class="accordion-header cursor-big">
+                            <button class="accordion-button collapsed bg-white rounded-3 tw-text-xl tw-gap-1"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                aria-expanded="false" aria-controls="collapseThree">
+                                What fees should I expect?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="fw-normal tw-text-lg text-dark-600">We believe in transparency. Basic account
+                                    maintenance and local transfers are free. For international transfers and
+                                    business-tier services, we offer competitive, low-cost rates that are always shown
+                                    upfront before you confirm.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item tw-mb-6 rounded-3 bg-white border-neutral-1px-solid" data-aos="fade-up"
+                        data-aos-duration="1200">
+                        <h2 class="accordion-header cursor-big">
+                            <button class="accordion-button collapsed bg-white rounded-3 tw-text-xl tw-gap-1"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                aria-expanded="false" aria-controls="collapseFour">
+                                What security measures protect my information?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="fw-normal tw-text-lg text-dark-600">Virtua Pay employs bank-grade 256-bit
+                                    encryption, biometric authentication, and real-time fraud monitoring. We never store
+                                    your sensitive card details directly, ensuring your financial data remains private
+                                    and protected.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="max-w-636 w-100">
+                    <div class="accordion-item tw-mb-6 rounded-3 bg-white border-neutral-1px-solid" data-aos="fade-up"
+                        data-aos-duration="600">
+                        <h2 class="accordion-header cursor-big">
+                            <button class="accordion-button collapsed bg-white rounded-3 tw-text-xl tw-gap-1"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                aria-expanded="false" aria-controls="collapseFive">
+                                How do I update my personal information?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="fw-normal tw-text-lg text-dark-600">You can update your personal information,
+                                    including your email and phone number, directly from the 'Profile Settings' page in
+                                    your Virtua Pay account dashboard.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item tw-mb-6 rounded-3 bg-white border-neutral-1px-solid" data-aos="fade-up"
+                        data-aos-duration="800">
+                        <h2 class="accordion-header cursor-big">
+                            <button class="accordion-button collapsed bg-white rounded-3 tw-text-xl tw-gap-1"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                                aria-expanded="false" aria-controls="collapseSix">
+                                How do I link my social media account?
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="fw-normal tw-text-lg text-dark-600">Simply go to 'Integrations' in your seller
+                                    dashboard, select your preferred platform (Instagram, Facebook, etc.), and follow
+                                    the prompts to authorize Virtua Pay.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item tw-mb-6 rounded-3 bg-white border-neutral-1px-solid" data-aos="fade-up"
+                        data-aos-duration="1000">
+                        <h2 class="accordion-header cursor-big">
+                            <button class="accordion-button collapsed bg-white rounded-3 tw-text-xl tw-gap-1"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven"
+                                aria-expanded="false" aria-controls="collapseSeven">
+                                Who do I contact for further assistance?
+                            </button>
+                        </h2>
+                        <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="fw-normal tw-text-lg text-dark-600">Our dedicated support team is available
+                                    24/7. You can reach out to us via the live chat feature in the app, or email us at
+                                    support@virtuapayments.com.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item tw-mb-6 rounded-3 bg-white border-neutral-1px-solid" data-aos="fade-up"
+                        data-aos-duration="1200">
+                        <h2 class="accordion-header cursor-big">
+                            <button class="accordion-button collapsed bg-white rounded-3 tw-text-xl tw-gap-1"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight"
+                                aria-expanded="false" aria-controls="collapseEight">
+                                How can I reset my password?
+                            </button>
+                        </h2>
+                        <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="fw-normal tw-text-lg text-dark-600">Click on 'Forgot Password' on the login
+                                    screen. We'll send a secure reset link to your registered email address or phone
+                                    number to help you regain access.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =============== FAQ Two Section End ================ -->
+
+    <!-- ========================== Card Features & Benefits Section Start ========================== -->
+    <section class="py-140 z-1 bg-dark-600 overflow-hidden">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between tw-gap-4 flex-wrap tw-mb-80-px">
+                <div class="max-w-500">
+                    <div class="d-flex align-items-center tw-gap-1 tw-mb-3" data-aos="fade-up" data-aos-duration="600">
+                        <img src="assets/images/icon/star-icon1.png" alt="Image">
+                        <h5 class="fw-normal text-main-600">More Features</h5>
+                    </div>
+                    <h2 class="fw-normal text-white" data-aos="fade-up" data-aos-duration="800"> Card Features <br> &
+                        Benefits</h2>
+                </div>
+                <div class="max-w-416">
+                    <p class="fw-normal tw-text-lg text-white tw-mb-6" data-aos="fade-up" data-aos-duration="1000">
+                        Discover our full suite of advanced services tailored to meet your needs.</p>
+                    <div class="max-w-140 position-relative" data-aos="fade-up" data-aos-duration="1200">
+                        <a href="about-us-other.html"
+                            class="features-three-link fw-semibold tw-text-lg text-dark-700 border-two-px-solid bg-main-600 tw-px-5 tw-py-205 rounded-3 w-100 d-flex align-items-center justify-content-center hover-text-dark-600">SEE
+                            MORE</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper our-services-two-slider overflow-hidden">
+                <div class="swiper-wrapper d-flex align-items-center tw-gap-4 tw-mb-15">
+                    <div class="swiper-slide">
+                        <div class="single group group-item max-w-246-px w-100 position-relative">
+                            <div
+                                class="our-services-slider-card tw-px-8 tw-py-8 bg-white tw-rounded-xl border-base-two-600 border-bottom text-center group-hover-bg-main-600 tw-duration-500 tw-hover-border-black tw-transition-05-secend">
+                                <span
+                                    class="tw-w-80-px tw-h-80-px tw-border-base-two-600-dashed d-block d-flex align-items-center justify-content-center tw-mb-6 tw-rounded-xl mx-auto">
+                                    <span
+                                        class="tw-w-17 tw-h-17 bg-base-two-10 d-flex align-items-center justify-content-center group-hover-bg-base-two-600 tw-rounded-md tw-duration-500">
+                                        <img src="assets/images/icon/amex.png" alt="American Express"
+                                            class="tw-w-full tw-h-full tw-object-cover">
+                                    </span>
+                                </span>
+                                <span class="fw-semibold tw-text-6 text-dark-600">American express</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="single group group-item max-w-246-px w-100 position-relative">
+                            <div
+                                class="our-services-slider-card tw-px-8 tw-py-8 bg-white tw-rounded-xl border-base-two-600 border-bottom text-center group-hover-bg-main-600 tw-duration-500 tw-hover-border-black tw-transition-05-secend">
+                                <span
+                                    class="tw-w-80-px tw-h-80-px tw-border-base-two-600-dashed d-block d-flex align-items-center justify-content-center tw-mb-6 tw-rounded-xl mx-auto">
+                                    <span
+                                        class="tw-w-17 tw-h-17 bg-base-two-10 d-flex align-items-center justify-content-center group-hover-bg-base-two-600 tw-rounded-md tw-duration-500">
+                                        <img src="assets/images/icon/visa.png" alt="Visa"
+                                            class="tw-w-full tw-h-full tw-object-cover">
+                                    </span>
+                                </span>
+                                <span class="fw-semibold tw-text-6 text-dark-600">Visa</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="single group group-item max-w-246-px w-100 position-relative">
+                            <div
+                                class="our-services-slider-card tw-px-8 tw-py-8 bg-white tw-rounded-xl border-base-two-600 border-bottom text-center group-hover-bg-main-600 tw-duration-500 tw-hover-border-black tw-transition-05-secend">
+                                <span
+                                    class="tw-w-80-px tw-h-80-px tw-border-base-two-600-dashed d-block d-flex align-items-center justify-content-center tw-mb-6 tw-rounded-xl mx-auto">
+                                    <span
+                                        class="tw-w-17 tw-h-17 bg-base-two-10 d-flex align-items-center justify-content-center group-hover-bg-base-two-600 tw-rounded-md tw-duration-500">
+                                        <img src="assets/images/icon/rupay.png" alt="Rupay"
+                                            class="tw-w-full tw-h-full tw-object-cover">
+                                    </span>
+                                </span>
+                                <span class="fw-semibold tw-text-6 text-dark-600">Rupay</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="single group group-item max-w-246-px w-100 position-relative">
+                            <div
+                                class="our-services-slider-card tw-px-8 tw-py-8 bg-white tw-rounded-xl border-base-two-600 border-bottom text-center group-hover-bg-main-600 tw-duration-500 tw-hover-border-black tw-transition-05-secend">
+                                <span
+                                    class="tw-w-80-px tw-h-80-px tw-border-base-two-600-dashed d-block d-flex align-items-center justify-content-center tw-mb-6 tw-rounded-xl mx-auto">
+                                    <span
+                                        class="tw-w-17 tw-h-17 bg-base-two-10 d-flex align-items-center justify-content-center group-hover-bg-base-two-600 tw-rounded-md tw-duration-500">
+                                        <img src="assets/images/icon/mastercard.png" alt="Mastercard"
+                                            class="tw-w-full tw-h-full tw-object-cover">
+                                    </span>
+                                </span>
+                                <span class="fw-semibold tw-text-6 text-dark-600">Master card</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="single group group-item max-w-246-px w-100 position-relative">
+                            <div
+                                class="our-services-slider-card tw-px-8 tw-py-8 bg-white tw-rounded-xl border-base-two-600 border-bottom text-center group-hover-bg-main-600 tw-duration-500 tw-hover-border-black tw-transition-05-secend">
+                                <span
+                                    class="tw-w-80-px tw-h-80-px tw-border-base-two-600-dashed d-block d-flex align-items-center justify-content-center tw-mb-6 tw-rounded-xl mx-auto">
+                                    <span
+                                        class="tw-w-17 tw-h-17 bg-base-two-10 d-flex align-items-center justify-content-center group-hover-bg-base-two-600 tw-rounded-md tw-duration-500">
+                                        <img src="assets/images/icon/gpay.png" alt="Google Pay"
+                                            class="tw-w-full tw-h-full tw-object-cover">
+                                    </span>
+                                </span>
+                                <span class="fw-semibold tw-text-6 text-dark-600">Gpay</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="single group group-item max-w-246-px w-100 position-relative">
+                            <div
+                                class="our-services-slider-card tw-px-8 tw-py-8 bg-white tw-rounded-xl border-base-two-600 border-bottom text-center group-hover-bg-main-600 tw-duration-500 tw-hover-border-black tw-transition-05-secend">
+                                <span
+                                    class="tw-w-80-px tw-h-80-px tw-border-base-two-600-dashed d-block d-flex align-items-center justify-content-center tw-mb-6 tw-rounded-xl mx-auto">
+                                    <span
+                                        class="tw-w-17 tw-h-17 bg-base-two-10 d-flex align-items-center justify-content-center group-hover-bg-base-two-600 tw-rounded-md tw-duration-500">
+                                        <img src="assets/images/icon/phonepe.png" alt="PhonePe"
+                                            class="tw-w-full tw-h-full tw-object-cover">
+                                    </span>
+                                </span>
+                                <span class="fw-semibold tw-text-6 text-dark-600">Phonepay</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="single group group-item max-w-246-px w-100 position-relative">
+                            <div
+                                class="our-services-slider-card tw-px-8 tw-py-8 bg-white tw-rounded-xl border-base-two-600 border-bottom text-center group-hover-bg-main-600 tw-duration-500 tw-hover-border-black tw-transition-05-secend">
+                                <span
+                                    class="tw-w-80-px tw-h-80-px tw-border-base-two-600-dashed d-block d-flex align-items-center justify-content-center tw-mb-6 tw-rounded-xl mx-auto">
+                                    <span
+                                        class="tw-w-17 tw-h-17 bg-base-two-10 d-flex align-items-center justify-content-center group-hover-bg-base-two-600 tw-rounded-md tw-duration-500">
+                                        <img src="assets/images/icon/bhim.png" alt="BHIM"
+                                            class="tw-w-full tw-h-full tw-object-cover">
+                                    </span>
+                                </span>
+                                <span class="fw-semibold tw-text-6 text-dark-600">BHIM</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="single group group-item max-w-246-px w-100 position-relative">
+                            <div
+                                class="our-services-slider-card tw-px-8 tw-py-8 bg-white tw-rounded-xl border-base-two-600 border-bottom text-center group-hover-bg-main-600 tw-duration-500 tw-hover-border-black tw-transition-05-secend">
+                                <span
+                                    class="tw-w-80-px tw-h-80-px tw-border-base-two-600-dashed d-block d-flex align-items-center justify-content-center tw-mb-6 tw-rounded-xl mx-auto">
+                                    <span
+                                        class="tw-w-17 tw-h-17 bg-base-two-10 d-flex align-items-center justify-content-center group-hover-bg-base-two-600 tw-rounded-md tw-duration-500 overflow-hidden">
+                                        <img src="assets/images/icon/virtua-coin.jpg" alt="Virtua Coin"
+                                            class="tw-w-full tw-h-full tw-object-cover">
+                                    </span>
+                                </span>
+                                <span class="fw-semibold tw-text-6 text-dark-600">Virtua coin</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <!-- ========================== Card Features & Benefits Section End ========================== -->
+
+    <!-- ========================== Our Latest Blog Section Start ========================== -->
+    <section id="our-latest-blog" class="py-140 z-1 bg-white">
+        <div class="container">
+            <div class="d-flex tw-gap-5 justify-content-between flex-wrap tw-mb-80-px">
+                <div class="max-w-768">
+                    <div class="d-flex align-items-center tw-gap-1 tw-mb-3" data-aos="fade-up" data-aos-duration="600">
+                        <img src="assets/images/icon/star-icon1.png" alt="Image">
+                        <h5 class="fw-normal text-primary-600 cursor-big">Articles</h5>
+                    </div>
+                    <h2 class="fw-normal h1 text-dark-600 cursor-big" data-aos="fade-up" data-aos-duration="800">Our
+                        Latest <br> Blog</h2>
+                </div>
+                <div class="max-w-350">
+                    <p class="text-dark-500 fw-normal tw-text-lg tw-mb-8" data-aos="fade-up" data-aos-duration="900">
+                        Discover Our Latest Expert Insights, Tips, and Trends on the Blog Today</p>
+                    <div class="position-relative" data-aos="fade-up" data-aos-duration="1000">
+                        <a href="blog-list.html"
+                            class="articles-link tw-px-5 tw-py-205 bg-main-600 rounded-3 tw-text-lg text-dark-700 border-two-px-solid fw-semibold hover-text-dark-600">Read
+                            Seller Guides</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="position-relative z-1" data-aos="fade-up" data-aos-duration="800">
+                        <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&q=80&w=416&h=360"
+                            alt="Online Banking Fraud" class="w-100 h-100">
+                        <span
+                            class="tw-px-3 tw-py-2 bg-main-600 tw-rounded-md fw-normal tw-text-4 text-dark-600 position-absolute inset-inline-start-24px inset-block-start-24px">
+                            Finance </span>
+                        <div class="position-relative z-1 margin-block-start--87px">
+                            <div
+                                class="articles-bank-card tw-px-6 tw-py-6 bg-white tw-rounded-xl text-center justify-content-center max-w-368 border-bottom-base-two-600 mx-auto">
+                                <h4 class="fw-normal text-dark-600 tw-mb-6 cursor-big line-clamp-2">How to Maximize Your
+                                    Sales Using Virtua Pay on Instagram Reels</h4>
+                                <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#blogModal1"
+                                    class="read-more-black tw-px-6 tw-py-205 fw-bold tw-text-4 w-100 d-flex align-items-center justify-content-center hover-text-white tw-transition-04-secend tw-rounded-xl">
+                                    Read More </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="position-relative z-1" data-aos="fade-up" data-aos-duration="1000">
+                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=416&h=360"
+                            alt="Online Banking Services" class="w-100 h-100">
+                        <span
+                            class="tw-px-3 tw-py-2 bg-main-600 tw-rounded-md fw-normal tw-text-4 text-dark-600 position-absolute inset-inline-start-24px inset-block-start-24px">
+                            Finance </span>
+                        <div class="position-relative z-1 margin-block-start--87px">
+                            <div
+                                class="articles-bank-card tw-px-6 tw-py-6 bg-white tw-rounded-xl text-center justify-content-center max-w-368 border-bottom-base-two-600 mx-auto">
+                                <h4 class="fw-normal text-dark-600 tw-mb-6 cursor-big line-clamp-2">The Future of Social
+                                    Commerce: Why Instant Checkout is Key</h4>
+                                <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#blogModal2"
+                                    class="read-more-black tw-px-6 tw-py-205 fw-bold tw-text-4 w-100 d-flex align-items-center justify-content-center hover-text-white tw-transition-04-secend tw-rounded-xl">
+                                    Read More </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="position-relative z-1" data-aos="fade-up" data-aos-duration="1200">
+                        <img src="https://images.unsplash.com/photo-1556742044-3c52d6e88c62?auto=format&fit=crop&q=80&w=416&h=360"
+                            alt="Pay Bills Online" class="w-100 h-100">
+                        <span
+                            class="tw-px-3 tw-py-2 bg-main-600 tw-rounded-md fw-normal tw-text-4 text-dark-600 position-absolute inset-inline-start-24px inset-block-start-24px">
+                            Finance </span>
+                        <div class="position-relative z-1 margin-block-start--87px">
+                            <div
+                                class="articles-bank-card tw-px-6 tw-py-6 bg-white tw-rounded-xl text-center justify-content-center max-w-368 border-bottom-base-two-600 mx-auto">
+                                <h4 class="fw-normal text-dark-600 tw-mb-6 cursor-big line-clamp-2">A Beginnerâ€™s Guide
+                                    to Earning Virtua Coins While You Shop</h4>
+                                <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#blogModal3"
+                                    class="read-more-black tw-px-6 tw-py-205 fw-bold tw-text-4 w-100 d-flex align-items-center justify-content-center hover-text-white tw-transition-04-secend tw-rounded-xl">
+                                    Read More </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======================= Our Latest Blog Section End ===================== -->
+
+    <!-- ======================= Blog Modal Popups Start ===================== -->
+    <!-- Blog Modal 1 -->
+    <div class="modal fade blog-modal" id="blogModal1" tabindex="-1" aria-labelledby="blogModal1Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="blogModal1Label">How to Maximize Your Sales Using Virtua Pay on
+                        Instagram Reels</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&q=80&w=800&h=600"
+                        alt="Blog Image" class="w-100 tw-rounded-xl tw-mb-6">
+                    <span class="blog-tag">Finance</span>
+                    <h5>Selling Directly Through Reels</h5>
+                    <p>Instagram Reels have become the ultimate discovery tool. With Virtua Pay, you can turn that
+                        discovery into instant sales. By integrating our secure checkout link directly into your
+                        content, you eliminate the friction of redirecting users to a separate website.</p>
+                    <h5>Common Types of Online Banking Scams</h5>
+                    <p><strong>Phishing Attacks:</strong> Fraudsters send emails or messages that mimic your bank,
+                        asking you to click a link and enter your credentials. Always verify the sender's email address
+                        and never click suspicious links.</p>
+                    <p><strong>Fake Banking Apps:</strong> Some scammers create counterfeit banking apps that look
+                        identical to legitimate ones. Always download apps from official app stores and verify the
+                        developer information.</p>
+                    <p><strong>SIM Swapping:</strong> Criminals contact your mobile provider to transfer your phone
+                        number to their device, intercepting OTPs and gaining access to your accounts.</p>
+                    <h5>How to Protect Yourself</h5>
+                    <p>1. <strong>Enable Two-Factor Authentication (2FA)</strong> â€” Add an extra layer of security
+                        beyond just your password.</p>
+                    <p>2. <strong>Monitor Your Accounts Regularly</strong> â€” Check your transaction history frequently
+                        and set up real-time alerts for any activity.</p>
+                    <p>3. <strong>Use Strong, Unique Passwords</strong> â€” Avoid using the same password across
+                        multiple
+                        platforms. Consider using a password manager.</p>
+                    <p>4. <strong>Keep Software Updated</strong> â€” Ensure your device's operating system, browser, and
+                        banking apps are always up to date with the latest security patches.</p>
+                    <p>5. <strong>Never Share OTPs or PINs</strong> â€” Your bank will never ask for these over phone,
+                        email, or text. If someone does, it's a scam.</p>
+                    <h5>What To Do If You're a Victim</h5>
+                    <p>If you suspect fraudulent activity, immediately contact your bank's helpline, freeze your
+                        account, change your passwords, and file a complaint with the cybercrime authorities. Quick
+                        action can minimize the damage significantly.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog Modal 2 -->
+    <div class="modal fade blog-modal" id="blogModal2" tabindex="-1" aria-labelledby="blogModal2Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="blogModal2Label">The Future of Social Commerce: Why Instant Checkout is
+                        Key</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=800&h=600"
+                        alt="Blog Image" class="w-100 tw-rounded-xl tw-mb-6">
+                    <span class="blog-tag">Finance</span>
+                    <h5>The Shift to Social Commerce</h5>
+                    <p>Consumers no longer want to leave their favorite social apps to make a purchase. They want to see
+                        a product, tap a button, and buy it instantly. This seamless experience is exactly what Virtua
+                        Pay delivers, bridging the gap between inspiration and transaction.</p>
+                    <h5>Step 1: Choose the Right Account</h5>
+                    <p>Before applying, evaluate your needs. Virtua Pay offers multiple account types â€” savings
+                        accounts
+                        for everyday users, business accounts for entrepreneurs, and premium accounts with enhanced
+                        features like higher transaction limits and dedicated support.</p>
+                    <h5>Step 2: Gather Required Documents</h5>
+                    <p>You'll typically need a valid government-issued ID (Aadhaar, PAN, Passport), proof of address, a
+                        recent photograph, and your mobile number linked to your ID. Having these ready will speed up
+                        the process.</p>
+                    <h5>Step 3: Register Online</h5>
+                    <p>Visit the Virtua Pay website or download the mobile app. Click on "Sign Up" and fill in your
+                        personal details. You'll receive an OTP on your registered mobile number for verification.</p>
+                    <h5>Step 4: Complete KYC Verification</h5>
+                    <p>Virtua Pay offers instant e-KYC through Aadhaar-based verification. Simply enter your details and
+                        verify with a one-time password. For full KYC, you may need to upload document scans or visit a
+                        partner location.</p>
+                    <h5>Step 5: Set Up Security Features</h5>
+                    <p>Once your account is active, set up two-factor authentication, create a strong password,
+                        configure transaction alerts, and set spending limits. These features ensure your account stays
+                        secure from day one.</p>
+                    <h5>Start Banking!</h5>
+                    <p>You're all set! Explore features like instant transfers, bill payments, reel-based shopping, and
+                        Virtua Coins rewards. The entire process takes less than 10 minutes.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog Modal 3 -->
+    <div class="modal fade blog-modal" id="blogModal3" tabindex="-1" aria-labelledby="blogModal3Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="blogModal3Label">A Beginner's Guide to Earning Virtua Coins While You
+                        Shop</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://images.unsplash.com/photo-1556742044-3c52d6e88c62?auto=format&fit=crop&q=80&w=800&h=600"
+                        alt="Blog Image" class="w-100 tw-rounded-xl tw-mb-6">
+                    <span class="blog-tag">Finance</span>
+                    <h5>Why Shop with Virtua Pay?</h5>
+                    <p>Not only does Virtua Pay offer the fastest and most secure way to buy products you see on social
+                        media, but it also rewards you! Every time you complete a purchase using our platform, you earn
+                        Virtua Coins, our exclusive loyalty currency.</p>
+                    <h5>Setting Up Bill Payments</h5>
+                    <p><strong>Link Your Accounts:</strong> Add your biller accounts by entering your consumer number or
+                        account ID. Virtua Pay supports hundreds of billers across categories including utilities,
+                        telecom, insurance, and subscriptions.</p>
+                    <p><strong>Save Billers for Quick Access:</strong> Once added, your billers are saved to your
+                        dashboard. You can view pending bills, due dates, and payment history at a glance. </p>
+                    <h5>Making Your First Payment</h5>
+                    <p>1. Select the biller from your saved list or search for a new one.</p>
+                    <p>2. Enter or confirm the bill amount (auto-fetched for supported billers).</p>
+                    <p>3. Choose your payment method â€” Virtua Pay wallet, linked bank account, or UPI.</p>
+                    <p>4. Authenticate with your PIN or biometric and confirm.</p>
+                    <p>5. Receive instant confirmation with a digital receipt.</p>
+                    <h5>Scheduling Recurring Payments</h5>
+                    <p>Never miss a due date again! Virtua Pay lets you set up auto-pay for recurring bills. Simply
+                        enable the auto-pay toggle for any saved biller, set the maximum amount limit, and relax. You'll
+                        receive a notification every time a payment is processed.</p>
+                    <h5>Earn Virtua Coins on Every Payment</h5>
+                    <p>Every bill payment through Virtua Pay earns you Virtua Coins â€” our exclusive rewards currency.
+                        Accumulate coins and redeem them for cashback, discounts on partner platforms, or exclusive
+                        deals. The more you pay through Virtua Pay, the more you save!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ======================= Blog Modal Popups End ===================== -->
+
+    <!-- ===================== contact us other section start ========================== -->
+    <section id="lets-start-a-conversation" class="bg-neutral-10 py-140 ">
+        <div class="container">
+
+            <div class="row gy-4 tw-mb-15">
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="group" data-aos="fade-up" data-aos-duration="600">
+                        <div class="bg-white tw-py-10 tw-rounded-xl group-hover-bg-base-two-600 tw-duration-500">
+                            <span
+                                class="tw-w-72-px tw-h-72-px bg-base-two-600 tw-text-8 text-white d-flex align-items-center justify-content-center tw-mb-6 rounded-circle mx-auto group-hover-bg-white tw-duration-500 group-hover-text-base-two-600">
+                                <i class="ph ph-phone-call"></i>
+                            </span>
+                            <div class="text-center">
+                                <h4 class="fw-normal text-dark-600 tw-mb-2 tw-duration-500 group-hover-text-white">Call
+                                    US 24/7</h4>
+                                <a href="tel:+918825426606"
+                                    class="fw-normal tw-text-lg text-dark-500 tw-duration-500 group-hover-text-white ">+91
+                                    8825426606</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="group" data-aos="fade-up" data-aos-duration="800">
+                        <div class="bg-white tw-py-10 tw-rounded-xl group-hover-bg-base-two-600 tw-duration-500">
+                            <span
+                                class="tw-w-72-px tw-h-72-px bg-base-two-600 tw-text-8 text-white d-flex align-items-center justify-content-center tw-mb-6 rounded-circle mx-auto group-hover-bg-white tw-duration-500 group-hover-text-base-two-600">
+                                <i class="ph ph-envelope-simple-open"></i>
+                            </span>
+                            <div class="text-center">
+                                <h4 class="fw-normal text-dark-600 tw-mb-2 tw-duration-500 group-hover-text-white">Email
+                                    Us Anytime</h4>
+                                <a href="mailto:support@virtuapayments.com"
+                                    class="fw-normal tw-text-lg text-dark-500 tw-duration-500 group-hover-text-white ">support@virtuapayments.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="group" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="bg-white tw-py-10 tw-rounded-xl group-hover-bg-base-two-600 tw-duration-500">
+                            <span
+                                class="tw-w-72-px tw-h-72-px bg-base-two-600 tw-text-8 text-white d-flex align-items-center justify-content-center tw-mb-6 rounded-circle mx-auto group-hover-bg-white tw-duration-500 group-hover-text-base-two-600">
+                                <i class="ph ph-map-pin"></i>
+                            </span>
+                            <div class="text-center">
+                                <h4 class="fw-normal text-dark-600 tw-mb-2 tw-duration-500 group-hover-text-white">Our
+                                    Location</h4>
+                                <a href="https://maps.google.com/?q=Adambakkam,Chennai,Tamil+Nadu+600088"
+                                    target="_blank"
+                                    class="fw-normal tw-text-lg text-dark-500 tw-duration-500 group-hover-text-white ">Adambakkam,<br>
+                                    Chennai, Tamil Nadu- 600088.</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="bg-white tw-px-10 tw-py-10 tw-rounded-xl" data-aos="zoom-in" data-aos-duration="1500">
+
+                <div class="tw-mb-12 text-center">
+                    <div class="d-flex align-items-center tw-gap-1 tw-mb-3 justify-content-center">
+                        <img src="assets/images/icon/star-icon2.png" alt="Image">
+                        <h5 class="fw-normal text-primary-600">Get In Touch</h5>
+                    </div>
+                    <h3 class="fw-normal text-dark-600 cursor-big">Let’s Start A Conversation</h3>
+                </div>
+
+                <form action="#">
+                    <div class="row gy-4 tw-mb-12">
+                        <div class="col-lg-6">
+                            <label for="name" class="fw-normal tw-text-lg tw-mb-3 text-dark-600">Your Name*</label>
+                            <input id="name" type="text" placeholder="Name"
+                                class="fw-normal tw-text-4 text-dark-500 tw-px-5 tw-py-205 rounded-pill w-100 bg-neutral-10 border-neutral-10 border focus-visible-border-main-600">
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="email" class="fw-normal tw-text-lg tw-mb-3 text-dark-600">Email Address*</label>
+                            <input type="text" id="email" placeholder="Email"
+                                class="fw-normal tw-text-4 text-dark-500 tw-px-5 tw-py-205 rounded-pill w-100 bg-neutral-10 border-neutral-10 border focus-visible-border-main-600">
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="number" class="fw-normal tw-text-lg tw-mb-3 text-dark-600">Phone Number*</label>
+                            <input type="text" id="number" placeholder="Phone Neumber"
+                                class="fw-normal tw-text-4 text-dark-500 tw-px-5 tw-py-205 rounded-pill w-100 bg-neutral-10 border-neutral-10 border focus-visible-border-main-600">
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="subject" class="fw-normal tw-text-lg tw-mb-3 text-dark-600">Subject*</label>
+                            <input type="text" id="subject" placeholder="Name"
+                                class="fw-normal tw-text-4 text-dark-500 tw-px-5 tw-py-205 rounded-pill w-100 bg-neutral-10 border-neutral-10 border focus-visible-border-main-600">
+                        </div>
+                        <div class="col-12">
+                            <label for="message" class="fw-normal tw-text-lg tw-mb-3 text-dark-600">Describe your
+                                message*</label>
+                            <textarea placeholder="Message" id="message"
+                                class="fw-normal tw-text-4 text-dark-500 tw-px-5 tw-py-205 tw-rounded-md tw-h-156-px w-100 bg-neutral-10 border-neutral-10 border focus-visible-border-main-600"></textarea>
+                        </div>
+                    </div>
+                    <button type="submit"
+                        class="tw-px-4 tw-py-3 bg-base-two-600 text-white fw-semibold tw-text-lg  w-100 tw-rounded-md text-center">
+                        Submit Now
+                    </button>
+                </form>
+
+            </div>
+        </div>
+    </section>
+    <!-- ===================== contact us other section end ========================== -->
+
+    <!-- ==================== Footer Two Section Start Here ==================== -->
+    <footer class="tw-pt-250px bg-dark-600 z-1 overflow-hidden">
+        <div class="container">
+            <div class="tw-mb-80-px">
+                <div class="row gy-5">
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="max-w-306" data-aos="fade-up" data-aos-duration="600">
+                            <a href="index.html">
+                                <img src="assets/images/logo/virtuapay-logo.png" alt="Image" class="tw-mb-6">
+                            </a>
+                            <p class="fw-normal tw-text-lg text-neutral-10 tw-mb-8">Weâ€™ve got the perfect tools for
+                                your
+                                success. Join us today and empower toward excellence."</p>
+                            <ul class="d-flex align-items-center tw-gap-4">
+                                <li>
+                                    <a href="https://www.instagram.com/virtuapayment?igsh=MWU5M3RreWN0bGlmbQ%3D%3D"
+                                        class="tw-w-10 tw-h-10 bg-white/10 rounded-circle d-flex align-items-center justify-content-center text-white tw-text-xl hover-bg-main-600 hover-text-dark-600 tw-duration-500">
+                                        <i class="ph ph-instagram-logo"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/profile.php?id=61588247163607&sk=directory_contact_info&fb_profile_edit_entry_point=%7B%22feature%22%3A%22profile_directory%22%2C%22click_point%22%3A%22pencil_edit_directory_section%22%2C%22additional_metadata%22%3A%7B%22section_type%22%3A%22contact_info%22%7D%7D"
+                                        class="tw-w-10 tw-h-10 bg-white/10 rounded-circle d-flex align-items-center justify-content-center text-white tw-text-xl hover-bg-main-600 hover-text-dark-600 tw-duration-500">
+                                        <i class="ph ph-facebook-logo"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/company/110243370/"
+                                        class="tw-w-10 tw-h-10 bg-white/10 rounded-circle d-flex align-items-center justify-content-center text-white tw-text-xl hover-bg-main-600 hover-text-dark-600 tw-duration-500">
+                                        <i class="ph ph-linkedin-logo"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://draft.blogger.com/u/7/blog/posts/8626495375645531207?hl=en&tab=jj"
+                                        class="tw-w-10 tw-h-10 bg-white/10 rounded-circle d-flex align-items-center justify-content-center text-white tw-text-xl hover-bg-main-600 hover-text-dark-600 tw-duration-500">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M16.19 2H7.81C4.6 2 2 4.6 2 7.81V16.19C2 19.4 4.6 22 7.81 22H16.19C19.4 22 22 19.4 22 16.19V7.81C22 4.6 19.4 2 16.19 2ZM11.16 16.48H8.5V7.52H12.78C13.91 7.52 14.83 8.44 14.83 9.57C14.83 10.15 14.59 10.67 14.21 11.04C14.8 11.41 15.19 12.06 15.19 12.8C15.19 14.1 14.13 15.16 12.83 15.16H11.16V16.48ZM11.16 11.39H12.78C13.2 11.39 13.54 11.05 13.54 10.63C13.54 10.21 13.2 9.87 12.78 9.87H11.16V11.39ZM11.16 14.84H12.83C13.43 14.84 13.92 14.35 13.92 13.75C13.92 13.15 13.43 12.66 12.83 12.66H11.16V14.84Z"
+                                                fill="currentColor" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div data-aos="fade-up" data-aos-duration="800">
+                            <h4 class="text-white fw-normal tw-mb-10 cursor-big">Quick Links</h4>
+                            <ul>
+                                <li class="tw-mb-4">
+                                    <a href="about-us-other.html"
+                                        class="fw-normal tw-text-lg text-neutral-10 hover-text-main-600">About Us</a>
+                                </li>
+                                <li class="tw-mb-4">
+                                    <a href="javascript:void(0)"
+                                        class="fw-normal tw-text-lg text-neutral-10 hover-text-main-600">Payment</a>
+                                </li>
+                                <li class="tw-mb-4">
+                                    <a href="faq-other.html"
+                                        class="fw-normal tw-text-lg text-neutral-10 hover-text-main-600">Faqs</a>
+                                </li>
+                                <li class="tw-mb-4">
+                                    <a href="terms-conditions.html"
+                                        class="fw-normal tw-text-lg text-neutral-10 hover-text-main-600">Terms &
+                                        Conditions</a>
+                                </li>
+                                <li class="tw-mb-4">
+                                    <a href="privacy-policy.html"
+                                        class="fw-normal tw-text-lg text-neutral-10 hover-text-main-600">Privacy
+                                        Policy</a>
+                                </li>
+                                <li class="tw-mb-4">
+                                    <a href="contact-us-other.html"
+                                        class="fw-normal tw-text-lg text-neutral-10 hover-text-main-600">Partner with
+                                        Virtua Pay</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div data-aos="fade-up" data-aos-duration="1000">
+                            <h4 class="text-white fw-normal tw-mb-10 cursor-big">For Sellers</h4>
+                            <ul>
+                                <li class="tw-mb-4">
+                                    <a href="javascript:void(0)"
+                                        class="fw-normal tw-text-lg text-neutral-10 hover-text-main-600">Transfer
+                                        Money</a>
+                                </li>
+                                <li class="tw-mb-4">
+                                    <a href="javascript:void(0)"
+                                        class="fw-normal tw-text-lg text-neutral-10 hover-text-main-600">Saving
+                                        Account</a>
+                                </li>
+                                <li class="tw-mb-4">
+                                    <a href="javascript:void(0)"
+                                        class="fw-normal tw-text-lg text-neutral-10 hover-text-main-600">Online
+                                        Shopping</a>
+                                </li>
+                                <li class="tw-mb-4">
+                                    <a href="javascript:void(0)"
+                                        class="fw-normal tw-text-lg text-neutral-10 hover-text-main-600">Pay Bills</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="max-w-306" data-aos="fade-up" data-aos-duration="1200">
+                            <h4 class="text-white fw-normal tw-mb-10 cursor-big">HQ: Sydney, Australia</h4>
+                            <p class="fw-normal tw-text-lg text-neutral-10 tw-mb-705">526/368 Sussex St <br> Sydney NSW
+                                2000</p>
+                            <h4 class="text-white fw-normal tw-mb-10 cursor-big">Branch Office: Chennai</h4>
+                            <p class="fw-normal tw-text-lg text-neutral-10 tw-mb-705">Ramapuram, Telephone Colony, <br>
+                                Ganesh Nagar, Adambakkam, <br> Chennai, Tamil Nadu 600088</p>
+                            <p class="fw-normal tw-text-lg text-neutral-10 tw-mb-3 cursor-big">Contact Number: <a
+                                    href="tel:+918825426606" class="text-neutral-10 hover-text-main-600">+91
+                                    8825426606</a></p>
+                            <a href="mailto:support@virtuapayments.com"
+                                class="tw-text-lg fw-normal text-neutral-10 hover-text-main-600">support@virtuapayments.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ================ botter footer section start ====================== -->
+            <div class="tw-mb-10 border-top-dark-500 tw-pt-6">
+                <div class="d-flex align-items-center justify-content-between tw-gap-4 flex-wrap">
+                    <p class="fw-semibold tw-text-lg text-white">Copyright @ 2026 Virtua Pay</p>
+                    <span class="fw-semibold tw-text-lg text-white">
+                        Designed By
+                        <a href="https://brightupdigital.com" class="text-main-600 hover-text-white transition-all"
+                            target="_blank">brightupdigital.com</a>
+                    </span>
+                </div>
+            </div>
+            <!-- ================ botter footer section end ====================== -->
+        </div>
+    </footer>
+    <!-- ==================== Footer Two Section End Here ==================== -->
+
+    <!-- Jquery js -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <!-- phosphor Js -->
+    <script src="assets/js/phosphor-icon.js"></script>
+    <!-- Bootstrap Bundle Js -->
+    <script src="assets/js/boostrap.bundle.min.js"></script>
+    <!-- GSAP js -->
+    <script src="assets/js/gsap.min.js"></script>
+    <!-- SplitText -->
+    <script src="assets/js/SplitText.min.js"></script>
+    <!-- Scroll Trigger -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!-- marquee js -->
+    <script src="assets/js/marquee-main.js"></script>
+    <!-- swper slider -->
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <!-- ScrollSmoother -->
+    <script src="assets/js/ScrollSmoother.min.js"></script>
+    <!-- aos animation -->
+    <script src="assets/js/aos-animation.js"></script>
+    <!-- counter up -->
+    <script src="assets/js/counter-up.main.js"></script>
+    <!-- custom GSAP -->
+    <script src="assets/js/custom-gsap.js"></script>
+    <!-- magnific popup -->
+    <script src="assets/js/magific-popup.js"></script>
+    <!-- main js -->
+    <script src="assets/js/main.js"></script>
+    <!-- Click-to-toggle accordion animation for Why Choose Us section -->
+    <script>
+        $(window).on('load', function () {
+            var $section = $('#why-choose-us');
+            if ($section.length === 0) return;
+
+            var $items = $section.find('.payment-solutions__item');
+            if ($items.length === 0) return;
+
+            // Disable the default click handler from main.js to prevent conflicts
+            $items.off('click');
+
+            // Handle Manual Clicks
+            $items.on('click', function () {
+                var $this = $(this);
+                var isActive = $this.hasClass('active');
+
+                if (isActive) {
+                    // If it's already open, close it
+                    $this.find('.payment-solutions__content').stop(true, true).slideUp(400, function () {
+                        $this.removeClass('active');
+                    });
+                } else {
+                    // If it's closed, close all others and open this one
+                    $items.each(function () {
+                        var $otherItem = $(this);
+                        if ($otherItem.hasClass('active') && !$otherItem.is($this)) {
+                            $otherItem.find('.payment-solutions__content').stop(true, true).slideUp(400, function () {
+                                $otherItem.removeClass('active');
+                            });
+                        }
+                    });
+
+                    // Open clicked item
+                    $this.find('.payment-solutions__content').stop(true, true).slideDown(400);
+                    $this.addClass('active');
+                }
+            });
+        });
+    </script>
+</body>
+
+
+</html>

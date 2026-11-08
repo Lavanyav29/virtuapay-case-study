@@ -1,0 +1,34 @@
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.*
+secrets.*
+
+# Database and backup files
+*.sql
+*.sql.gz
+*.bak
+*.backup
+*.dump
+
+# Dependencies and generated files
+node_modules/
+vendor/
+__pycache__/
+*.pyc
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor settings
+.vscode/
+.idea/
+  
